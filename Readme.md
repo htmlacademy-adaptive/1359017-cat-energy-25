@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи»
 
 * Студент: [Ekaterina Bolshakova](https://up.htmlacademy.ru/adaptive/25/user/1359017).
-* Наставник: `Arthur Litovko`.
+* Наставник: [Arthur Litovko](https://github.com/baileys-li).
 
 ---
 
