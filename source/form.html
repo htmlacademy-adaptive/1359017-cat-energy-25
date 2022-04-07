@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html  class="page" lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Кэт энерджи</title>
+  </head>
+  <body>
+    <div>
+      <header class="main-header">
+        <a class="main-header__logo">
+          <img src="img/logo-desktop-1.svg" width="202" height="58" alt="Кэт Энерджи">
+        </a>
+        <nav class="main-nav">
+          <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+          <div class="main-nav__wrapper">
+            <ul class="main-nav__list site-list">
+              <li class="site-list__item">
+                <a href="index.html">
+                  Главная
+                </a>
+              </li>
+              <li class="site-list__item"><a href="catalog.html">Каталог продукции</a></li>
+              <li class="site-list__item site-list__item--active"><a>Подбор программы</a></li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+    </div>
+    <main class ="main-container">
+      <h1 class="main-container__header main-container__header--form container">Подбор программы</h1>
+      <form class="main-container__form form" action="https://echo.htmlacademy.ru" method="Post">
+        <p class="form__text container">Заполните анкету и мы подберем программу питания для вашего кота</p>
+        <div class="form__list-wrapper">
+          <ul form="__list container">
+            <li class="form-item">
+              <label class="form__label" for="form-name">Имя:*</label>
+              <input class="form__input-text" type="text" placeholder="Барсик" id="form-name" name="name">
+              </input>
+            </li>
+            <li class="form-item">
+              <label class="form__label" for="form-weight">вес (кг):*</label>
+              <input class="form__input-text" type="text" placeholder="7" id="form-weight" name="weight"></input>
+            </li>
+            <li class="form-item">
+              <label class="form__label" for="form-age">возраст (лет):</label>
+              <input class="form__input-text" type="text" placeholder="7" id="form-age" name="age"></input>
+            </li>
+          </ul>
+          <div class="form__list-border-wrapper">
+            <ul class="form__list form__list--massa container">
+              <li class="form-item">
+                <input class="form__input-radio visually-hidden" type="radio" id="form-skinny" name="massa" value="down-massa" checked>
+                <label class="form__label form__label--radio" for="form-skinny">Похудение</label>
+              </li>
+              <li class="form__item">
+                <input class="form__input-radio visually-hidden" type="radio" id="form-fat" name="mass" value="up-mass">
+                <label class="form__label form__label--radio" for="form-fat">Набор массы</label>
+              </li>
+              <li class="form__item">
+                <input class="form__input-radio visually-hidden" type="radio" id="form-advice" name="mass" value="advice-mass">
+                <label class="form__label form__label--radio" for="form-advice">Не знаю (Нужен ваш совет)</label>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+
+      </form>
+
+    </main>
+  </body>
