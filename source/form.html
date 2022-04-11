@@ -30,21 +30,28 @@
       <h1 class="main-container__header main-container__header--form container">Подбор программы</h1>
       <form class="main-container__form form" action="https://echo.htmlacademy.ru" method="Post">
         <p class="form__text container">Заполните анкету и мы подберем программу питания для вашего кота</p>
-        <div class="form__list-wrapper">
+        <fieldset class="form__fieldset form__fieldset--cat">
+          <legend class="visually-hidden">Данные кота
+          </legend>
+         <div class="form__list-wrapper">
           <ul class="form__list container">
             <li class="form-item">
               <label class="form__label" for="form-name">Имя:*</label>
-              <input class="form__input-text" type="text" placeholder="Барсик" id="form-name" name="name">
+              <input class="form__input-text" type="text" placeholder="Барсик" id="form-name" name="name" required>
             </li>
             <li class="form-item">
               <label class="form__label" for="form-weight">вес (кг):*</label>
-              <input class="form__input-text" type="text" placeholder="7" id="form-weight" name="weight">
+              <input class="form__input-text" type="number" placeholder="7" id="form-weight" name="weight" required>
             </li>
             <li class="form-item">
               <label class="form__label" for="form-age">возраст (лет):</label>
-              <input class="form__input-text" type="text" placeholder="7" id="form-age" name="age">
+              <input class="form__input-text" type="number" placeholder="7" id="form-age" name="age">
             </li>
-          </ul>
+           </ul>
+         </div>
+        </fieldset>
+        <fieldset class="form__fieldset form__fieldset--programm">
+          <legend class="visually-hidden">Программа для кота</legend>
           <div class="form__list-border-wrapper">
             <ul class="form__list form__list--massa container">
               <li class="form-item">
@@ -52,43 +59,45 @@
                 <label class="form__label form__label--radio" for="form-skinny">Похудение</label>
               </li>
               <li class="form__item">
-                <input class="form__input-radio visually-hidden" type="radio" id="form-fat" name="mass" value="up-mass">
+                <input class="form__input-radio visually-hidden" type="radio" id="form-fat" name="massa" value="up-massa">
                 <label class="form__label form__label--radio" for="form-fat">Набор массы</label>
               </li>
               <li class="form__item">
-                <input class="form__input-radio visually-hidden" type="radio" id="form-advice" name="mass" value="advice-mass">
+                <input class="form__input-radio visually-hidden" type="radio" id="form-advice" name="massa" value="advice-massa">
                 <label class="form__label form__label--radio" for="form-advice">Не знаю (Нужен ваш совет)</label>
               </li>
             </ul>
           </div>
-        </div>
+        </fieldset>
         <fieldset class="form__fieldset form__fieldset--owner">
+          <legend class="form__legend form__legend--owner">Контактные данные
+            (владельца кота)
+          </legend>
           <div class="container">
-            <h2 class="form__legend form__legend--owner">Контактные данные
-              (владельца кота)</h2>
               <ul class="form__list form__list--contacts">
                 <li class="form__item">
-                  <label class="form__label form__label--email" for="form-email">e-mail:*</label>
-                  <input class="form__input-text form__input-text--email" type="email" placeholder="kuklachev@gmail.com" id="form-email" name="email">
+                  <label class="form__label form__label--email" for="form-email">E-mail:*</label>
+                  <input class="form__input-text form__input-text--email" type="email" placeholder="kuklachev@gmail.com" id="form-email" name="email" required>
                 </li>
                 <li class="form__item">
-                  <label class="form__label form__label--phone" for="form-phone">телефон:*</label>
-                  <input class="form__input-text form__input-text--phone" type="tel" placeholder="8 (960) 900-60-90" id="form-phone" name="phone">
+                  <label class="form__label form__label--phone" for="form-phone">Телефон:*</label>
+                  <input class="form__input-text form__input-text--phone" type="tel" placeholder="8 (960) 900-60-90" id="form-phone" name="phone" required>
                 </li>
               </ul>
           </div>
         </fieldset>
         <fieldset class="form__fieldset form__fieldset--comments">
+          <legend class="form__legend form__legend--comments">Комментарий
+          </legend>
           <div class="container">
-            <h2 class="form__legend form__legend--comments">Комментарий</h2>
             <div class="form__comments-wrapper">
               <textarea class="form__textarea" placeholder="Расскажите обо всех повадках кота" name="comments"></textarea>
             </div>
           </div>
         </fieldset>
         <fieldset class="form__fieldset">
+          <legend class="form__legend form__legend--additional">Дополнительно</legend>
           <div class="container">
-            <h2 class="form__legend form__legend--additional">Дополнительно</h2>
             <ul class="form__list form__list--additional">
               <li class="form__item">
                 <input class="form__input-checkbox visually-hidden" type="checkbox" id="form-sweetener" name="sweetener" checked>
@@ -147,13 +156,13 @@
         </ul>
       </div>
       <div class="main-footer__copyright copyright">
-        <a class="copyright__link-logo" href="https://htmlacademy.ru">
-          <img class="copyright__logo" src="img/HTMLAcademy — inscription.svg" alt="Лого" width="27" height="34">
+        <a class="copyright__link-logo" href="https://htmlacademy.ru">HTML Academy
         </a>
         <a class="copyright__link-logo" href="https://htmlacademy.ru">
-          <img class="copyright__logo" src="img/Лого_html-1.svg" alt="Лого" width="27" height="34">
+          <img class="copyright__logo" src="img/logo-html.svg" alt="Лого" width="27" height="34">
         </a>
       </div>
       </div>
     </footer>
   </body>
+</html>
