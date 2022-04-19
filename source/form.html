@@ -3,29 +3,32 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Кэт энерджи</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-    <div>
       <header class="main-header">
+      <div class="main-header-wrapper">
         <a class="main-header__logo">
-          <img src="img/logo-desktop-1.svg" width="202" height="58" alt="Кэт Энерджи">
+          <img src="img/logo-mobile-cat.svg" width="33" height="37" alt="Кэт Энерджи">
+          <img src="img/logo.header-2.svg" width="101" height="18" alt="Кэт Энерджи">
         </a>
+        <button class="main-header__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
         <nav class="main-nav">
-          <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
           <div class="main-nav__wrapper">
             <ul class="main-nav__list site-list">
               <li class="site-list__item">
-                <a href="index.html">
+                <a class="site-list__link" href="index.html">
                   Главная
                 </a>
               </li>
-              <li class="site-list__item"><a href="catalog.html">Каталог продукции</a></li>
-              <li class="site-list__item site-list__item--active"><a>Подбор программы</a></li>
+              <li class="site-list__item"><a class="site-list__link" href="catalog.html">Каталог продукции</a></li>
+              <li class="site-list__item site-list__item--active"><a class="site-list__link">Подбор программы</a></li>
             </ul>
           </div>
         </nav>
+      </div>
       </header>
-    </div>
+
     <main class ="main-container">
       <h1 class="main-container__header main-container__header--form container">Подбор программы</h1>
       <form class="main-container__form form" action="https://echo.htmlacademy.ru" method="Post">
@@ -33,8 +36,8 @@
         <fieldset class="form__fieldset form__fieldset--cat">
           <legend class="visually-hidden">Данные кота
           </legend>
-         <div class="form__list-wrapper">
-          <ul class="form__list container">
+          <div class="form__list-wrapper">
+            <ul class="form__list container">
             <li class="form-item">
               <label class="form__label" for="form-name">Имя:*</label>
               <input class="form__input-text" type="text" placeholder="Барсик" id="form-name" name="name" required>
@@ -47,22 +50,22 @@
               <label class="form__label" for="form-age">возраст (лет):</label>
               <input class="form__input-text" type="number" placeholder="7" id="form-age" name="age">
             </li>
-           </ul>
-         </div>
+            </ul>
+          </div>
         </fieldset>
         <fieldset class="form__fieldset form__fieldset--programm">
           <legend class="visually-hidden">Программа для кота</legend>
           <div class="form__list-border-wrapper">
             <ul class="form__list form__list--massa container">
-              <li class="form-item">
+              <li class="form__item__list">
                 <input class="form__input-radio visually-hidden" type="radio" id="form-skinny" name="massa" value="down-massa" checked>
                 <label class="form__label form__label--radio" for="form-skinny">Похудение</label>
               </li>
-              <li class="form__item">
+              <li class="form__item__list">
                 <input class="form__input-radio visually-hidden" type="radio" id="form-fat" name="massa" value="up-massa">
                 <label class="form__label form__label--radio" for="form-fat">Набор массы</label>
               </li>
-              <li class="form__item">
+              <li class="form__item__list">
                 <input class="form__input-radio visually-hidden" type="radio" id="form-advice" name="massa" value="advice-massa">
                 <label class="form__label form__label--radio" for="form-advice">Не знаю (Нужен ваш совет)</label>
               </li>
@@ -123,7 +126,7 @@
           <p class="form__required-notify">* — Обязательные поля</p>
         </div>
       </form>
-      <section class="contacts">
+      <section class="contacts contacts--darker">
         <h2 class="visually-hidden">Контакты</h2>
         <div class="contacts__wrapper">
           <div class="contacts__address address">
