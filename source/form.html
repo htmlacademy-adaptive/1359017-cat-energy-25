@@ -6,27 +6,29 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-    <div>
       <header class="main-header">
+      <div class="main-header-wrapper">
         <a class="main-header__logo">
-          <img src="img/logo-desktop-1.svg" width="202" height="58" alt="Кэт Энерджи">
+          <img src="img/logo-mobile-cat.svg" width="33" height="37" alt="Кэт Энерджи">
+          <img src="img/logo.header-2.svg" width="101" height="18" alt="Кэт Энерджи">
         </a>
+        <button class="main-header__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
         <nav class="main-nav">
-          <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
           <div class="main-nav__wrapper">
             <ul class="main-nav__list site-list">
               <li class="site-list__item">
-                <a href="index.html">
+                <a class="site-list__link" href="index.html">
                   Главная
                 </a>
               </li>
-              <li class="site-list__item"><a href="catalog.html">Каталог продукции</a></li>
-              <li class="site-list__item site-list__item--active"><a>Подбор программы</a></li>
+              <li class="site-list__item"><a class="site-list__link" href="catalog.html">Каталог продукции</a></li>
+              <li class="site-list__item site-list__item--active"><a class="site-list__link">Подбор программы</a></li>
             </ul>
           </div>
         </nav>
+      </div>
       </header>
-    </div>
+
     <main class ="main-container">
       <h1 class="main-container__header main-container__header--form container">Подбор программы</h1>
       <form class="main-container__form form" action="https://echo.htmlacademy.ru" method="Post">
@@ -124,11 +126,11 @@
           <p class="form__required-notify">* — Обязательные поля</p>
         </div>
       </form>
-      <section class="contacts">
+      <section class="contacts contacts--darker">
         <h2 class="visually-hidden">Контакты</h2>
         <div class="contacts__wrapper">
           <div class="contacts__address address">
-            <address class="address__container  address__container--darker container">
+            <address class="address__container container">
               <strong class="address__title">Приглашаем к сотрудничеству дилеров!</strong>
               <p class="address__text"><span class="address__text-wrap">ул. Большая Конюшенная, д. 19/8</span> Санкт-Петербург</p>
             </address>
