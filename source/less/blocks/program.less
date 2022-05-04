@@ -11,14 +11,25 @@
   background-size: 100%, auto @bg-mobile-height;
   padding: 27px 20px 0;
 
+
   @media (min-width: @tablet-width) {
-    background-color: @basic-white;
-    background-image: none;
+    background: 0 0;
     color: #000000;
     font-weight: 400;
     font-size: 60px;
     line-height: 60px;
     padding: 62px 29px 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    max-width: 1300px;
+    padding-left: 40px;
+    padding-right: 40px;
+    position: relative;
+    background-position: right;
+    background-image: linear-gradient(to bottom, fade(@basic-green, 85%) 694px, @basic-white 694px), url("../img/index-cat.jpg");
+    background-repeat: no-repeat;
+    background-size: 50%;
   }
 }
 
@@ -36,6 +47,11 @@
     line-height: 1;
     padding-right: 237px;
     margin: 0 0 41px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 126px;
+    padding-left: 40px;
   }
 }
 
@@ -56,13 +72,30 @@
   }
 }
 
-.programm__link {
+.program__link {
   margin: 0 auto;
+  min-width: 280px;
+  padding: 7px 44px;
+
+  @media (min-width: @tablet-width) {
+    min-width: 244px;
+    padding: 14px 26px;
+  }
+
+  @media (min-width: @desktop-width) {
+    min-width: 244px;
+    padding: 14px 26px;
+  }
 }
 
 .program__image {
   @media (min-width: @tablet-width) {
     width: 709px;
     height: 609px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 552px;
+    height: 499px;
   }
 }
