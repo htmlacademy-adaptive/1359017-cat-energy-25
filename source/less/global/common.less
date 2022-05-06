@@ -5,20 +5,11 @@
 }
 
 body {
-  margin: 0 auto;
-  width: @min-width;
+  margin: 0;
+  min-width: @min-width;
   font-family: @main-font;
   font-size: 14px;
   line-height: (18/14);
-
-  @media (min-width: @tablet-width) {
-    width: 768px;
-  }
-
-
-  @media (min-width: @desktop-width) {
-    width: 1440px;
-  }
 }
 
 img {
