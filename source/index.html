@@ -8,14 +8,18 @@
   </head>
   <body class="page__body">
     <header class="main-header">
-      <div class="main-header__wrapper">
-      <a class="main-header__logo">
-        <img src="img/logo-mobile-cat.svg" width="33" height="37" alt="Кэт Энерджи">
-           <img src="img/logo.header-2.svg" width="101" height="18" alt="Кэт Энерджи">
+      <div class="main-header__wrapper-index">
+        <div class="main-header__block">
+      <a class="main-header__logo-link">
+        <img class="main-header__logo" src="img/logo-mobile-cat.svg" width="33" height="37" alt="Кэт Энерджи">
       </a>
-      <button class="main-header__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-      <nav class="main-nav">
-        <div class="main-nav__wrapper">
+        <a class="main-header__logo-mark-link">
+           <img class="main-header__logo-mark" src="img/logo.header-2.svg" width="101" height="18" alt="Кэт Энерджи">
+          </a>
+          </div>
+
+      <nav class="main-nav  main-nav--closed main-nav--nojs">
+        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
           <ul class="main-nav__list site-list">
             <li class="site-list__item site-list__item--active">
               <a class="site-list__link">
@@ -25,11 +29,12 @@
             <li class="site-list__item"><a class="site-list__link" href="catalog.html">Каталог продукции</a></li>
             <li class="site-list__item"><a class="site-list__link" href="form.html">Подбор программы</a></li>
           </ul>
-        </div>
+
       </nav>
       </div>
     </header>
-    <main class="main-container">
+
+    <main class="main-container>
         <section class="program">
           <div class="program__wrapper container">
             <h1 class="program__title">Функциональное
@@ -105,21 +110,23 @@
                   <span class="before-after__price-value">15000 руб.</span>
                 </p>
               </div>
-              <div class="slider">
-                <div class="slider__img">
-                  <img src="img/cat-fat.jpg" alt="Кот до корма">
-                  <img src="img/cat-skinny.jpg" alt="Кот после корма">
-              </div>
-              <div class="slider__bar">
-                <button class="slider__text slider__text--before" type="button">Было</button>
-                <div class="slider__range">
-                  <button class="slider__button" type="button" aria-label="лево право"></button>
-                </div>
-                <button class="slider__text slider__text--after" type="button">Стало</button>
-              </div>
-            </div>
-          </div>
-          </div>
+              <div class="slider toggle">
+                <input class="slider__before" type="radio" id="slider-input-before" name="slider-input">
+                <input class="slider__after" type="radio" id="slider-input-after" name="slider-input">
+                <div class="toggle__items">
+                  <div class="toggle__item toggle__item--before">
+                    <img class="toggle__img" src="img/cat-fat.jpg"  alt="До">
+
+                    </div>
+                  <div class="toggle__item toggle__item--after">
+                    <img class="toggle__img" src="img/cat-skinny.jpg"  alt="После">
+
+                    </div>
+
+                    </div>
+                <div class="toggle__control">
+                  <label class="toggle__label toggle__label--before" for="slider-input-before">Было</label><div class="toggle__range"><div class="toggle__scale"></div><button class="toggle__button" type="button">До/После</button></div><label class="toggle__label toggle__label--after" for="slider-input-after">Стало</label></div></div></div></div></section>
+
         </section>
         <section class="contacts">
           <h2 class="visually-hidden" hidden>Контакты</h2>
@@ -132,6 +139,7 @@
             </div>
           </div>
           <div class="contacts__map" aria-label="Карта" id="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253002858!2d30.320858715782997!3d59.938719169054586!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x469631f6df7d3481%3A0xc0016be317f9a6fd!2sCat%20Energy!5e0!3m2!1sru!2ses!4v1652082982427!5m2!1sru!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
           </div>
         </section>
     </main>

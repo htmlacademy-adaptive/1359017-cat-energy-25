@@ -100,3 +100,41 @@
   }
 }
 
+.products__item--more {
+  background: none;
+  margin-top: -1px;
+}
+
+.products__wrap-info {
+  position: relative;
+  padding-top: 80px;
+  text-align: center;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 163px;
+  }
+}
+
+.products__wrap-info::before {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 26px;
+  left: 50%;
+  width: 30px;
+  height: 30px;
+  margin-left: -15px;
+  background-image: url("../img/plus.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% auto;
+  opacity: 2;
+
+  @media (min-width: @tablet-width) {
+    top: 54px;
+    width: 60px;
+    height: 60px;
+    margin-left: -30px;
+    background-image: url("../img/plus-tablet.svg");
+  }
+}
