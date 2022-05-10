@@ -7,6 +7,18 @@
     padding-top: 43px;
     background-color: transparent;
   }
+
+  @media (min-width: @desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
+
+.before-after__wrapper {
+  @media (min-width: @desktop-width) {
+    display: grid;
+    grid-template-columns: 700px 700px;
+  }
 }
 
 .before-after__content {
@@ -16,6 +28,8 @@
 
   @media (min-width: @desktop-width) {
     padding: 69px 40px 0;
+    z-index: 5;
+    grid-column: 1;
     //background-color: #ffffff;
     //background-image: linear-gradient(#ffffff 0, #ffffff 200px, #f2f2f2 200px, #f2f2f2 100%);
   }
@@ -58,6 +72,10 @@
   @media (min-width: @tablet-width) {
     font-size: 16px;
     line-height: (24/16);
+
+    @media (min-width: @desktop-width) {
+      padding-top: 70px;
+    }
   }
 }
 
