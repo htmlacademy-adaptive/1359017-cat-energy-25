@@ -32,6 +32,18 @@
   font-size: 14px;
   line-height: 18px;
   background-color: #f2f2f2;
+  position: relative;
+
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: auto;
+    left: auto;
+    background-repeat: no-repeat;
+    background-position: top left;
+    z-index: 1;
+  }
 
 
   @media (min-width: @tablet-width) {
@@ -44,6 +56,7 @@
     width: 570px;
   }
 }
+
 
 .categories__title {
   padding: 0;
@@ -68,6 +81,50 @@
   }
 }
 
+.categories__item--slim::before {
+  width: 35px;
+  height: 49px;
+  margin-top: 21px;
+  margin-left: 29px;
+  background-image: url("../img/cat-black-slim.svg");
+  background-size: 100%;
+}
+
+.categories__item--slim::after {
+  content: "";
+  position: absolute;
+  top: 24px;
+  left: 22px;
+  display: block;
+  width: 50px;
+  height: 50px;
+  margin-right: 20px;
+  background-color: #68b738;
+  border-radius: 50%;
+}
+
+.categories__item--muscles::before {
+  width: 67px;
+  height: 28px;
+  margin-top: 24px;
+  margin-left: 22px;
+  background-image: url("../img/cat-black-pro.svg");
+  background-size: 100%;
+}
+
+.categories__item--muscles::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 50px;
+  margin-right: 20px;
+  background-color: #68b738;
+  border-radius: 50%;
+  top: 12px;
+  left: 34px;
+}
+
 .categories__description {
   padding: 0;
   margin: 0;
@@ -82,6 +139,7 @@
     max-width: 340px;
   }
 }
+
 
 .categories__link {
   font-family: @accent-font;
@@ -100,4 +158,3 @@
     padding: 52px 25px 0 52px;
   }
 }
-
