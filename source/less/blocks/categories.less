@@ -33,6 +33,7 @@
   line-height: 18px;
   background-color: #f2f2f2;
   position: relative;
+  width: 297px;
 
   &::before {
     content: "";
@@ -71,6 +72,7 @@
   font-size: 24px;
   line-height: (37/24);
   text-align: center;
+  padding-left: 45px;
 
   @media (min-width: @tablet-width) {
     font-size: 36px;
@@ -88,7 +90,16 @@
   margin-left: 29px;
   background-image: url("../img/cat-black-slim.svg");
   background-size: 100%;
+
+  @media (min-width: @tablet-width) {
+    width: 140px;
+    height: 194px;
+    margin: 58px 28px 0 0;
+    right: 90px;
+    top: 14px;
+  }
 }
+
 
 .categories__item--slim::after {
   content: "";
@@ -101,6 +112,14 @@
   margin-right: 20px;
   background-color: #68b738;
   border-radius: 50%;
+
+  @media (min-width: @tablet-width) {
+    width: 200px;
+    height: 200px;
+    top: 90px;
+    left: auto;
+    right: 60px;
+  }
 }
 
 .categories__item--muscles::before {
@@ -110,6 +129,13 @@
   margin-left: 22px;
   background-image: url("../img/cat-black-pro.svg");
   background-size: 100%;
+
+  @media (min-width: @tablet-width) {
+    width: 268px;
+    height: 112px;
+    right: 50px;
+    top: 69px;
+  }
 }
 
 .categories__item--muscles::after {
@@ -123,6 +149,14 @@
   border-radius: 50%;
   top: 12px;
   left: 34px;
+
+  @media (min-width: @tablet-width) {
+    width: 200px;
+    height: 200px;
+    top: 59px;
+    left: auto;
+    right: 45px;
+  }
 }
 
 .categories__description {
@@ -131,6 +165,7 @@
   padding-left: 20px;
   padding-bottom: 23px;
   color: #444444;
+  padding-right: 33px;
 
   @media (min-width: @tablet-width) {
     font-size: 16px;
