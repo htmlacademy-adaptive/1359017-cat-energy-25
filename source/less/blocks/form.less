@@ -7,6 +7,8 @@
   font-size: 14px;
   line-height: (18/14);
   text-transform: uppercase;
+  max-width: 267px;
+  padding-top: 37px;
 
   @media (min-width: @tablet-width) {
     font-size: 20px;
@@ -65,10 +67,24 @@
   line-height: 18px;
   text-transform: uppercase;
   color: #444444;
+  border: 1px solid #e8e8e8;
 
   @media (min-width: @tablet-width) {
     font-size: 20px;
     line-height: 1;
+    padding: 10px;
+    padding-left: 15px;
+  }
+}
+
+.form__input-text:invalid {
+  border: 2px solid #ff8282;
+  padding: 11px;
+  box-shadow: none;
+
+  @media (min-width: @tablet-width) {
+    padding: 9px;
+    padding-left: 14px;
   }
 }
 
@@ -138,6 +154,36 @@
 
 .form__label {
   padding-top: 13px;
+  margin-right: 15px;
+  position: relative;
+}
+
+.form__label--radio::before {
+  border-radius: 50%;
+  top: 11px;
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 30px;
+  height: 30px;
+  box-sizing: border-box;
+  border: 1px solid #cdcdcd;
+}
+
+.form__list--massa .form__label {
+  padding-left: 45px;
+}
+
+.form__input-radio:checked + label::after {
+  content: "";
+  position: absolute;
+  top: 19px;
+  left: 9px;
+  box-sizing: border-box;
+  width: 12px;
+  height: 12px;
+  background-color: #68b738;
+  border-radius: 50%;
 }
 
 .form__comments-wrapper {
@@ -155,6 +201,8 @@
   box-sizing: border-box;
   width: 100%;
   min-height: 150px;
+  border: 1px solid #e7e7e7;
+  padding: 12px;
 }
 
 .form__button {
