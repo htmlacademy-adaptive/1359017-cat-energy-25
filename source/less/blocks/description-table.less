@@ -1,3 +1,29 @@
 .description-table {
-  width: 100%;
+  width: 142px;
+  border-collapse: collapse;
+
+  @media (min-width: @tablet-width) {
+    width: 100%;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 167px;
+  }
+}
+
+.description-table__row {
+  @media (min-width: @tablet-width) {
+    border-bottom: 1px solid #cdcdcd;
+  }
+}
+
+.description-table__partition {
+  font-size: 12px;
+  line-height: 16px;
+  color: #444444;
+  padding: 0;
+}
+
+.description-table__partition:last-child {
+  text-align: right;
 }

@@ -7,6 +7,13 @@
   height: 65px;
   margin-left: 20px;
   //width: 100%;
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 
 
   @media (min-width: @tablet-width) {
@@ -23,6 +30,14 @@
   margin-right: auto;
   padding-top: 14px;
   padding-bottom: 13px;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 
   @media (min-width: @tablet-width) {
     margin: 0;
@@ -44,14 +59,14 @@
   @media (min-width: @tablet-width) {
     display: flex;
     flex-direction: row;
-    padding-left: 30px;
-    padding-right: 30px;
     margin: 0 auto;
     width: 100%;
     margin-left: auto;
     margin-right: auto;
     justify-content: space-between;
     padding-top: 42px;
+    font-size: 18px;
+    line-height: (24/18);
   }
 
   @media (min-width: @desktop-width) {
@@ -62,6 +77,9 @@
     position: absolute;
     background-color: transparent;
     z-index: 3;
+    font-size: 20px;
+    line-height: (30/20);
+    left: 182px;
   }
 }
 
@@ -119,4 +137,3 @@
 .main-header__logo-mark {
   display: block;
 }
-

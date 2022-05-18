@@ -16,19 +16,26 @@
   min-width: 100%;
 
   &--secondary {
-    padding: 20px 70px;
     font-family: @accent-font;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: (20/16);
     background-color: #f2f2f2;
-    display: flex;
     align-items: center;
     text-align: center;
     text-transform: uppercase;
     text-decoration: none;
     color: #444444;
     min-width: 249px;
+    display: block;
+    width: 100%;
+    padding: 10px 0;
+    margin-bottom: 24px;
+
+    @media (min-width: @tablet-width) {
+      width: 250px;
+      margin-bottom: 0;
+    }
   }
 }
