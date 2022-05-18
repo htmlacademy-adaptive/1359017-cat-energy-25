@@ -10,12 +10,16 @@
     <div>
       <header class="main-header">
         <div class="main-header__wrapper">
-        <a class="main-header__logo">
-          <img src="img/logo-desktop-1.svg" width="202" height="58" alt="Кэт Энерджи">
-        </a>
-        <button class="main-header__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-        <nav class="main-nav">
-          <div class="main-nav__wrapper">
+          <div class="main-header__block">
+            <a class="main-header__logo-link">
+              <img class="main-header__logo" src="img/logo-mobile-cat.svg" width="33" height="37" alt="Кэт Энерджи">
+            </a>
+              <a class="main-header__logo-mark-link">
+                 <img class="main-header__logo-mark" src="img/logo.header-2.svg" width="101" height="18" alt="Кэт Энерджи">
+                </a>
+                </div>
+                <nav class="main-nav  main-nav--closed main-nav--nojs">
+                  <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
             <ul class="main-nav__list site-list">
               <li class="site-list__item">
                 <a class="site-list__link" href="index.html">
@@ -25,7 +29,7 @@
               <li class="site-list__item site-list__item--active"><a class="site-list__link">Каталог продукции</a></li>
               <li class="site-list__item"><a class="site-list__link" href="form.html">Подбор программы</a></li>
             </ul>
-          </div>
+
         </nav>
         </div>
       </header>
@@ -233,10 +237,12 @@
             </div>
             <a class="product__item-order product__button button" href="#">заказать</a>
           </li>
-          <li class="products__item product">
+          <li class="products__item products__item--more product">
             <div class ="products__wrap">
+              <div class="products__wrap-info">
             <h3 class="products__title-all"><a class="product__item-link" href="#">Показать еще 100500 товаров</a></h3>
             <p class="products__more">На самом деле вкусов гораздо больше!</p>
+          </div>
             <a class="product__item-show button--secondary" href="#">Показать все</a>
           </div>
           </li>
@@ -289,6 +295,7 @@
           </div>
         </div>
         <div class="contacts__map" aria-label="Карта" id="map">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253002858!2d30.320858715782997!3d59.938719169054586!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x469631f6df7d3481%3A0xc0016be317f9a6fd!2sCat%20Energy!5e0!3m2!1sru!2ses!4v1652082982427!5m2!1sru!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
       </section>
     </main>

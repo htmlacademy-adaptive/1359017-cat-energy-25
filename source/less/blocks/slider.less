@@ -1,17 +1,16 @@
-.slider__text {
-  font-family: @accent-font;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: (20/16);
-  display: flex;
-  align-items: center;
-  text-align: center;
-  text-transform: uppercase;
-  color: #000000;
+.slider {
+  margin-left: -20px;
+  margin-right: -20px;
+}
 
-  @media (min-width: @tablet-width) {
-    font-size: 20px;
-    line-height: (30/20);
-  }
+.slider__before {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
