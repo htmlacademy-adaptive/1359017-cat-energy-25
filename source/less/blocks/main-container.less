@@ -5,33 +5,32 @@
   font-size: 36px;
   line-height: 1;
   color: #000000;
+  padding-top: 27px;
+  margin: 0 auto 28px;
 
   @media (min-width: @tablet-width) {
     font-size: 60px;
     line-height: 60px;
     margin-bottom: 55px;
-    padding: 30px 30px 0;
+    padding: 30px 0 0;
     border-top: none;
   }
 
   @media (min-width: @desktop-width) {
-    padding: 0 40px;
-    padding-top: 73px;
+    margin-bottom: 55px;
+    padding: 0;
+    margin-left: 0;
   }
 }
 
 .main-container__form {
-  padding: 0 20px 0;
+  margin-bottom: 32px;
 
-  @media (min-width: @tablet-width) {
-    padding: 0 30px 0;
-  }
 
   @media (min-width: @desktop-width) {
-    padding: 0 40px 0;
     display: grid;
     grid-template-columns: 600px 600px;
-    gap: 80px;
+    column-gap: 80px;
     width: 100%;
   }
 }
@@ -62,9 +61,8 @@
 
 .main-container__block {
   @media (min-width: @desktop-width) {
-    padding-bottom: 40px;
+    padding-bottom: 80px;
     display: grid;
     grid-template-columns: 1fr;
-    padding-right: 40px;
   }
 }
