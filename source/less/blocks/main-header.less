@@ -14,10 +14,13 @@
 }
 
 .main-header__logo-link {
-  width: 235px;
   height: 66px;
-  display: block;
   margin: 0;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  min-width: 191px;
+  align-items: center;
 
   @media (min-width: @tablet-width) {
     width: 190px;
@@ -30,13 +33,24 @@
   position: relative;
 }
 
-.main-header__logo-mark {
+.main-header__logo {
   @media (min-width: @tablet-width) {
     display: none;
   }
+}
+
+.main-header__logo-mark {
+  margin-top: 12px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 2px;
+    width: 173px;
+    height: 58px;
+  }
 
   @media (min-width: @desktop-width) {
-    display: none;
+    width: 202px;
+    height: 59px;
   }
 }
 

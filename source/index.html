@@ -13,8 +13,13 @@
     <header class="main-header-index main-header">
 
         <a class="main-header__logo-link logo">
-          <img class="main-header__logo" src="img/logo-mobile-cat.svg" width="33" height="37" alt="Кэт Энерджи">
-          <img class="main-header__logo-mark" src="img/logo.header-2.svg" width="101" height="18" alt="Кэт Энерджи">
+          <img class="main-header__logo" src="img/logo-mobile-cat.svg" width="33" height="37" alt="рыжий кот">
+          <picture>
+            <source media="(min-width: 1440px)" srcset="img/logo-slogan-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logo-slogan-tablet.svg">
+            <img class="main-header__logo-mark" src="img/logo.header-2.svg" width="101" height="18" alt="Лого Кэт Энерджи">
+
+          </picture>
         </a>
 
 
@@ -130,12 +135,18 @@
           <input class="slider__after" type="radio" id="slider-input-after" name="slider-input">
           <div class="toggle__items">
             <div class="toggle__item toggle__item--before">
-              <img class="toggle__img" src="img/cat-fat.png" width="280" height="232" alt="До">
-
+              <picture>
+                <source media="(min-width: 1440px)" src="img/cat-fat-desktop.png" srcset="img/cat-fat-desktop@2x.png">
+                <source media="(min-width: 768px)" src="img/cat-fat-tablet.png" srcset="img/cat-fat-tablet@2x.png">
+              <img class="toggle__img" src="img/cat-fat-mobil.png" width="280" height="232" alt="До">
+            </picture>
             </div>
             <div class="toggle__item toggle__item--after">
-              <img class="toggle__img" src="img/cat-skinny.png" alt="После">
-
+              <picture>
+                <source media="(min-width: 1440px)" src="img/cat-skinny-desktop.png" srcset="img/cat-skinny-desktop@2x.png">
+                <source media="(min-width: 768px)" src="img/cat-skinny-tablet.png" srcset=img/cat-skinny-tablet.png>
+              <img class="toggle__img" src="img/cat-skinny-mobil.png" alt="После">
+            </picture>
             </div>
 
           </div>
@@ -204,6 +215,7 @@
       </div>
     </div>
   </footer>
+  <script src="script.js"></script>
 </body>
 
 </html>
