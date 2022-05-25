@@ -1,42 +1,64 @@
 .main-nav {
   display: flex;
+  flex-direction: column;
 
   @media (min-width: @tablet-width) {
     display: flex;
+    flex-direction: row;
+    justify-content: space-between;
   }
 }
 
-.main-nav__list {
-  padding: 0;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 22px;
-  list-style-type: none;
+.main-header__nav {
+  @media (min-width: @tablet-width) {
+    margin-left: auto;
+  }
+}
 
+.site-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 2px;
 
   @media (min-width: @tablet-width) {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    flex-direction: row;
-    gap: 30px;
+    width: 440px;
   }
 
   @media (min-width: @desktop-width) {
-    gap: 30px;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    flex-direction: row;
+    width: 480px;
   }
 }
 
-.site-list__item {
-  padding-bottom: 24px;
-}
 
 .site-list__link {
   text-decoration: none;
   color: #000000;
+  font-family: @accent-font;
+  font-size: 20px;
+  line-height: 1;
+  text-transform: uppercase;
+  display: block;
+  width: 100%;
+  padding: 22px 0;
+  text-align: center;
+  border-top: 1px solid #e6e6e6;
+
+  @media (min-width: @tablet-width) {
+    font-family: @accent-font;
+    font-size: 18px;
+    line-height: 25px;
+    color: #000000;
+    border: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 20px;
+    line-height: 25px;
+    color: #000000;
+  }
 }
 
 .site-list__link--index {
@@ -66,8 +88,8 @@
 .main-nav--closed .main-nav__toggle::before {
   content: "";
   position: absolute;
-  top: 17px;
-  left: 17px;
+  top: 24px;
+  right: 19px;
   width: 24px;
   height: 2px;
   background-color: #000000;
@@ -80,10 +102,10 @@
   }
 }
 
+
 .main-nav--opened .main-nav__toggle {
   top: 0;
   right: 0;
-  left: auto;
 
   &::before,
   &::after {
@@ -103,18 +125,11 @@
 
   &::after {
     transform: rotate(-45deg);
-    content: "";
-    position: absolute;
-    top: 31px;
-    left: 22px;
-    width: 24px;
-    height: 2px;
-    background-color: #000000;
   }
 
   &:active::before,
   &:active::after {
-    background-color: fade(#ffffff, 30%);
+    background-color: fade(#000000, 30%);
   }
 }
 
