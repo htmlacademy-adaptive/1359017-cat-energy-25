@@ -184,6 +184,7 @@
 .form__item {
   margin-bottom: 14px;
   display: flex;
+  position: relative;
 
   @media (min-width: @tablet-width) {
     margin-bottom: 20px;
@@ -300,5 +301,16 @@
     display: flex;
     justify-content: space-between;
     gap: 70px;
+  }
+}
+
+.form__input-icon {
+  position: absolute;
+  top: 16px;
+  right: 15px;
+
+  @media (min-width: @tablet-width) {
+    top: auto;
+    right: 15px;
   }
 }
