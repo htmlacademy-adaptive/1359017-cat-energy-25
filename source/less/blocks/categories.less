@@ -91,11 +91,13 @@
 
 .categories__link-arrow {
   align-items: center;
-  color: #000000;
-  font-family: @accent-font;
   position: relative;
+  display: flex;
   text-decoration: none;
-  text-transform: uppercase;
+}
+
+.categories__link-arrow :active {
+  color: #0000004d;
 }
 
 .categories__img {
@@ -113,5 +115,37 @@
   @media (min-width: @desktop-width) {
     grid-row: 1;
     grid-column: 1;
+  }
+}
+
+.categories__link-img {
+  width: 24px;
+  height: 12px;
+  margin-right: 17px;
+}
+
+.categories__link-img :hover {
+  width: 32px;
+  height: 18px;
+}
+
+.categories__link-text {
+  color: #000000;
+  font-family: @accent-font;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding-right: 17px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+
+  @media (min-width: @tablet-width) {
+    padding-right: 25px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-right: 28px;
   }
 }

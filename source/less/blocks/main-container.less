@@ -66,3 +66,24 @@
     grid-template-columns: 1fr;
   }
 }
+
+.page__body::before {
+  @media (min-width: @desktop-width) {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    background-image: url("../img/index-background-desktop.png");
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: cover;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 697px;
+    background-color: #65a93c;
+  }
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/index-background-desktop 1@2x.png");
+  }
+}
