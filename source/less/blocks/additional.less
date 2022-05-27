@@ -30,7 +30,6 @@
 }
 
 .additional-goods__wraper {
-  padding: 26px 37px 27px;
   font-size: 16px;
   line-height: 20px;
 
@@ -181,10 +180,34 @@
   background-size: 302px;
   min-height: 225px;
   padding-top: 65px;
+  width: 100%;
 
   @media (min-width: @tablet-width) {
-    width: 100%;
-    min-height: 200px;
+    background-size: cover;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 276px;
+    background-size: cover;
+  }
+}
+
+.additional-goods__image {
+  display: block;
+  margin: 0 auto 63px;
+
+  @media (min-width: @desktop-width) {
+    margin-top: 60px;
+  }
+}
+
+.additional-goods__gift {
+  @media (min-width: @tablet-width) {
+    display: flex;
+  }
+
+  @media (min-width: @desktop-width) {
+    flex-direction: column;
   }
 }
 
